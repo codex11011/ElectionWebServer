@@ -1,0 +1,76 @@
+
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+        <servlet-name>GetAllNominee</servlet-name>
+        <servlet-class>com.election.Nominee.GetAllNomineeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAllNominee</servlet-name>
+        <url-pattern>/getAllNominee</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetNominee</servlet-name>
+        <servlet-class>com.election.Nominee.GetNomineeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetNominee</servlet-name>
+        <url-pattern>/getNominee</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminLogin</servlet-name>
+        <servlet-class>com.election.Admin.login.AdminLoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLogin</servlet-name>
+        <url-pattern>/adminLogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminLogout</servlet-name>
+        <servlet-class>com.election.Admin.login.AdminLogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>AdminLogout</servlet-name>
+        <url-pattern>/adminLogout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>NomineeLoginController</servlet-name>
+    	<servlet-class>com.election.Nominee.login.NomineeLoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>NomineeLoginController</servlet-name>
+    	<url-pattern>/nomineeLogin</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+    	<servlet-name>NomineeLogoutController</servlet-name>
+    	<servlet-class>com.election.Nominee.login.NomineeLogoutController</servlet-class>
+    </servlet>
+    <servlet>
+    	<description>
+    	</description>
+    	<display-name>NomineeFormController</display-name>
+    	<servlet-name>NomineeFormController</servlet-name>
+    	<servlet-class>com.election.Nominee.NomineeFormController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>NomineeLogoutController</servlet-name>
+    	<url-pattern>/nomineeLogout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+    	<servlet-name>NomineeFormController</servlet-name>
+    	<url-pattern>/nomineeForm</url-pattern>
+    </servlet-mapping>
+  
+    
+</web-app>
